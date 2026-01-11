@@ -22,12 +22,18 @@
     <nav class="nav">
         <div class="nav-content">
             <a href="#hero" class="logo">ASHRAFUL</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" onclick="document.getElementById('nav-toggle').checked = false">About</a>
+                <a href="#experience" onclick="document.getElementById('nav-toggle').checked = false">Experience</a>
+                <a href="#projects" onclick="document.getElementById('nav-toggle').checked = false">Projects</a>
+                <a href="#expertise" onclick="document.getElementById('nav-toggle').checked = false">Expertise</a>
+                <a href="#contact" onclick="document.getElementById('nav-toggle').checked = false">Contact</a>
             </div>
         </div>
     </nav>
@@ -386,7 +392,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Ashraful Haque Chowdhury. Crafted with precision.</p>
+        <p>&copy; 2026 Ashraful Haque Chowdhury. Crafted with precision.</p>
     </footer>
 </body>
 
