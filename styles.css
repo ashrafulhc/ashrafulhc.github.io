@@ -736,6 +736,100 @@ section {
     margin-bottom: 0;
 }
 
+.about-intro {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.about-wave {
+    display: inline-block;
+    animation: wave 2.5s ease-in-out infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.about-block {
+    margin-bottom: var(--spacing-xl);
+}
+
+.about-block:last-child {
+    margin-bottom: 0;
+}
+
+.about-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.heading-icon {
+    font-size: 1.125rem;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-list li {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    padding-left: var(--spacing-lg);
+    position: relative;
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-list li:last-child {
+    margin-bottom: 0;
+}
+
+.about-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
 /* ==============================================
    EXPERTISE SECTION
    ============================================== */
